@@ -77,7 +77,7 @@ start();
 console.log('Would you like to play again? y/n');
 let response = readline.question();
 
-if (response !== 'n') {
+if (response === 'y') {
   start();
 }
 
