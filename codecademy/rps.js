@@ -72,12 +72,11 @@ function start() {
 
   playGame();
 }
-start();
 
-console.log('Would you like to play again? y/n');
-let response = readline.question();
-
-if (response === 'y') {
+let response = "n";
+do {
   start();
-}
+  console.log('Would you like to play again? y/n');
+  response = readline.question();
+} while (response !== "n");
 
